@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <div id="clock"></div>
+    <div id="answer"></div>
+
+    <script>
+            setInterval(showClock, 1000);
+            function showClock() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                let currentTime = hour + ":" + min + ":" + sec;    
+                document.getElementById("clock").innerHTML = time.toLocaleTimeString();
+            }
+                showClock()
+    
+
+            let time = new Date();
+            let answer = "Something about milk"
+            const milkTime = new Date();
+            milkTime.setHours(11, 00, 00);
+            console.log(milkTime);
+            console.log(time);
+            if (time > milkTime) {
+                answer = "No, it is after 11 you can't have milk in coffee"
+                console.log("hej")
+            }
+            
+
+
+            document.getElementById("answer").innerHTML = answer;
+            
+
+
+    </script>
+</body>
+</html>
