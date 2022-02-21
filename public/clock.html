@@ -7,10 +7,18 @@
     <title>Clock</title>
     <style>
         body {
-    background-image: url("https://i.imgur.com/5FIw54F.jpeg");
+            background-image: url("https://i.imgur.com/5FIw54F.jpeg");
         }
 
-    #clock{
+        #clock {
+            margin-top: 10px;
+            height: 250px;
+            margin-left: 400px;
+            margin-right: 400px;
+            border-radius: 100px;
+        }
+
+    #clock-header{
         font-size: 10rem;
         text-align: center;
         padding-top: 30px;
@@ -18,7 +26,9 @@
     </style>
 </head>
 <body>
-    <div id="clock"></div>
+    <div id="clock">
+        <h1 id="clock-header"></h1>
+    </div>
     <div id="answer"></div>
 
     <script>
