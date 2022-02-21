@@ -8,28 +8,29 @@
     <style>
         body {
             background-image: url("https://i.imgur.com/5FIw54F.jpeg");
+            background-repeat: no-repeat;
+            background-size: auto;
         }
 
-        #clock {
-            margin-top: 10px;
-            height: 250px;
-            margin-left: 400px;
-            margin-right: 400px;
-            border-radius: 100px;
-        }
-
-    #clock-header{
-        font-size: 10rem;
+    #clock{
+        font-size: large;
         text-align: center;
         padding-top: 30px;
+        
+    }
+    #answer{
+        font-size: large;
+        text-align: center;
+        padding-top: 30px;
+        
     }
     </style>
 </head>
 <body>
-    <div id="clock">
-        <h1 id="clock-header"></h1>
+    <div id="clock"></div>
+    <div id="answer">
+        <h1>"Can I have milk in coffee now?"</h1>
     </div>
-    <div id="answer"></div>
 
     <script>
             setInterval(showClock, 1000);
